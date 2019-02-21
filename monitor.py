@@ -161,14 +161,12 @@ def plot(accessToken, collection):
             plt.show()
             
             # Take a screenshot on Gnome desktop
-            if os.environ.get("XDG_CURRENT_DESKTOP") == "GNOME":
+            if os.environ.get("XDG_MENU_PREFIX").startswith("gnome"):
                 os.system("gnome-screenshot -f screenshot{}.png".format(i))
                 i = i+1
                             
             #plt.pause(1)
-            #plt.pause(60*60) # one hour
-            #time.sleep(1)
-            time.sleep(60*60)
+            plt.pause(60*60) # one hour
         else:
             print(str(datetime.datetime.now()) + " Empty json data")
         
