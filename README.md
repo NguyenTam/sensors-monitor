@@ -1,10 +1,10 @@
 # sensors-monitor
 Retrieve sensor data and visualize.
 
-Works well on gnome environment.
-
+Screenshot works on gnome environment (Unity, Gnome Shell).
 # Commands
 `python3 my_python_file.py`
 
-# Demonstration Video
+# Demonstration
 TBA
+
