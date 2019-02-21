@@ -10,6 +10,8 @@ import os
 # for printing error date and time.
 import datetime
 
+# for delaying
+import time
 
 # Constants
 DATE = "date"
@@ -164,7 +166,9 @@ def plot(accessToken, collection):
                 i = i+1
                             
             #plt.pause(1)
-            plt.pause(60*60) # one hour 
+            #plt.pause(60*60) # one hour
+            #time.sleep(1)
+            time.sleep(60*60)
         else:
             print(str(datetime.datetime.now()) + " Empty json data")
         
