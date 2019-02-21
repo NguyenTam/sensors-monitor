@@ -10,9 +10,6 @@ import os
 # for printing error date and time.
 import datetime
 
-# for delaying
-import time
-
 # Constants
 DATE = "date"
 SENSOR1 = "sensor1"
